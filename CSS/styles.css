@@ -1,0 +1,532 @@
+
+body {
+	font-weight: 100;
+}
+/*---------------HEADER-------------------*/
+
+.header-wrapper {
+	padding-top: 20px;
+    padding-bottom: 20px;
+	color: #ffffff;
+    background-color: #000000;
+    height: 100px;
+}
+
+.sub-container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #e4eff0;
+}
+
+.header-logo {
+	height: 50px;
+	float: left !important;
+}
+
+.float-right {
+	float: right !important;
+	font-weight: 100;
+}
+
+.float-right > input[type='text'] {
+    background-image: url(../image-assets/search-icon.png);
+    background-position: 193px 5px;
+    background-repeat: no-repeat;
+    width: 213px;
+    font-size: 10px;
+    height: 23px;
+}
+
+.float-right > input::-webkit-input-placeholder {
+	color: #696769;
+}
+
+.nav {
+	list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+	float: left;
+}
+
+.nav-fb {
+    display: block;
+    padding: 5px 0px;
+}
+
+.fb-img {
+	width: 7px;
+}
+
+.nav-twitter {
+    display: block;
+    padding: 11px 8px;
+}
+
+.twitter-img {
+	width: 18px;
+}
+
+        /*---------------NAV-BAR-------------------*/
+
+.nav-link {
+	display: block;
+    padding: 13px 9px 13px 12px;
+    color: rgba(255,255,255,0.75);
+    font-size: 11px;
+}
+
+.nav-link-separator:before {
+    content: "|";
+    position: absolute;
+    color: rgba(255,255,255,0.75);
+    margin-top: 7px;
+}
+
+.nav .nav-item a:hover, .nav .nav-item a:focus {
+	color: rgba(255,255,255,0.75);
+}
+
+.padding-nav-item {
+	padding: 14px 0px;
+}
+
+.sub-menu-parent { 
+	position: relative;}
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: -37px;
+  width: 12em;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(-4%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+nav i {
+	color: #979597;
+    position: relative;
+    top: 6px;
+    left: 3px;
+}
+
+nav a { color: #607a90; 
+	display: block; 
+	text-decoration: none; 
+	font-weight: 100;
+	padding: 0.5em 1em;}
+.sub-menu-parent > a:hover, .sub-menu-parent > a:focus { color: #607a90; text-decoration: none; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: #edebed; text-align: center; box-shadow: inset 0 15px 15px -15px #565356; }
+nav > ul > li { display: inline-block;  }
+
+.sub-menu {
+  background: #fffeff;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.sub-menu > li:first-child {
+	background: #4798a5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+
+}
+
+.sub-menu > li:first-child > a {
+	color: rgb(203, 237, 240);
+	padding: 0.5em 1em;
+	border-bottom: none;
+}
+
+.sub-menu-parent > a {
+	padding: 0px 1em 6px 1em;
+}
+
+ul .separator:after {
+	content: "|";
+    position: absolute;
+    left: -3px;
+    top: 9px;
+    color: #607a90;
+}
+
+.sub-menu  a {
+	padding: 0.5em 0em;
+	margin-left: 8px;
+    margin-right: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+	text-decoration: none;
+}
+
+.sub-menu > li:last-child > a {
+	border-bottom: none;
+}
+
+/*---------------SECTIONS-------------------*/
+/* SECTION - N1 */
+.section-N1 {
+	background: url(../image-assets/topsection-background.png);
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper-section1 {
+	height: 100%;
+    background: rgba(0, 0, 0, 0.31);
+}
+
+.wrapper-section1 p {
+	padding-top: 15px;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.wrapper-section1 > p > a, .wrapper-section1 > p > a:hover, .wrapper-section1 > p > a:focus  {
+	color: #e4eff0;
+	text-decoration: underline;
+}
+
+.flex-wrapper {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 9px;
+}
+
+.mojo-jacket-img1 {
+	width: 280px;
+}
+
+h2 {
+	font-weight: 100;
+	color: #f8f9f9;
+}
+
+.paragraph-section1 {
+ 	margin-left: -27px;
+}
+
+.paragraph-section1 > ul {
+	list-style: none;
+    padding-left: 0;
+ 	font-weight: 100;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    color: #d1dce0;
+}
+
+.select-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #658996;
+    border: 1px solid #658996;
+    color: #e1ecf2;
+    font-size: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.fa-caret-down {
+    z-index: 1;
+    color: #e1ecf2;
+    position: relative;
+    left: 4px;
+    top: 2px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.dropDown-button {
+    padding-left: 17px;
+    margin-left: -16px;
+    bottom: -5.8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #658996;
+    border: 1px solid #658996;
+    border-left: 1px solid #4c6b76;
+    position: relative;
+}
+
+.right-split-button {
+    float: right;
+    top: -30px;
+    position: relative;
+    right: 70px;
+}
+
+.a-validation-box {
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+.quantity {
+    background: #f6f6f6;
+    color: #93b0bb;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    top: 3px;
+    left: -4px;
+    border-left: 1px solid #4c6b76;
+    border-right: 1px solid #4c6b76;
+}
+
+        /* BUTTONS */
+.fa-caret-up {
+    z-index: 1;
+    color: #e1ecf2;
+    position: relative;
+    left: 0px;
+    top: 1px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.a-validation-box  input {
+    border-left: none;
+}
+
+#dropUp {
+    left: -4px;
+}
+
+.validation-button {
+    float: right;
+    top: -21px;
+    position: relative;
+    right: 70px;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 21px;
+    padding-right: 21px;
+    background: #4798a5;
+    border: 1px solid #4798a5;
+    border-radius: 1px;
+    color: #e1ecf2;
+}
+
+.quantity-span {
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    left: -5px;
+}
+
+/* SECTION - N2 */
+.section-N2 {
+	height: 750px;
+	background-color: #8a888a;
+	box-shadow: inset 0 15px 15px -15px #373537;
+}
+
+.sub-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.mojo-jacket-img2 {
+	width: 400px;
+    padding-top: 5px;
+}
+
+.paragraph-section2 {
+    padding-right: 120px;
+    padding-left: 15px;
+}
+
+.paragraph-section2 p {
+	font-size: 14px;
+	white-space: pre-line;
+}
+
+/* SECTION - N3 */
+.section-N3 {
+	height: 550px;
+    background: #00314f;
+   	box-shadow: inset 0 15px 15px -15px #081b2b;
+}
+
+.rv-padding {
+	padding-top: 30px;
+    padding-left: 150px;
+}
+
+.modal-link {
+	position: relative;
+    top: -33px;
+    left: 155px;
+}
+
+.modal-link, .modal-link:hover, .modal-link:focus {
+	color: #d6e2e6;
+    text-decoration: underline;
+}
+
+        /* THIS IS REVIEWER SECTION */
+.reviews-wrapper {
+	display: flex;
+    flex-direction: row;
+}
+
+.reviewer {
+	display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.reviewer img {
+	border: 1px solid #f7f2f0;
+}
+
+.review-text {
+	padding-left: 30px;
+}
+
+.reviewer-name {
+	font-weight: 500;
+}
+
+.star {
+	padding-bottom: 8px;
+}
+
+.review-text > h5 span {
+	font-weight: 100;
+    padding-right: 10px;
+}
+
+.review-text p {
+	font-size: 12px;
+    line-height: 1.2;
+}
+
+/*---------------FOOTER-------------------*/
+
+footer {
+	height: 80px;
+	background-color: #000000;
+}
+
+.footer-wrapper {
+	padding-top: 22px;
+}
+
+
+/*---------------MODAL-------------------*/
+.modal {
+    font-family: 'Raleway';
+    color: #737073;
+}
+
+.modal-body > p, .modal-body > form > label {
+    padding-left: 25px;
+}
+
+.review-title {
+    width: 77%;
+}
+
+.modal-body > p > span {
+    font-weight: 900;
+    color: #575557;
+}
+
+.modal-body > form > textarea {
+    margin-left: 15px;
+    border: 1px solid #e0dddd;
+    padding: 10px;
+}
+
+textarea::-webkit-input-placeholder {  
+    color: #575557;
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.modal-body > form > .btn {
+    position: relative;
+    right: -413px;
+    margin-top: 15px;
+    background: #4798a5;
+    border: 1px solid #4798a5;
+    font-weight: 100;
+    font-family: 'Raleway';
+}
+
+.modal-body > form > .btn:hover, .modal-body > form > .btn:focus, 
+.modal-body > form > .btn:active
+{
+    background: #4798a5;
+    border: 1px solid #4798a5;
+}
+
+.rating {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 181px;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 139%;
+    line-height: 1.2;
+    color:#ddd;
+    text-shadow: 1px 0px 0px #4798a5;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #4798a5;
+    text-shadow: 1px 0px 0px #4798a5;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #4798a5;
+    text-shadow: 1px 0px 0px #4798a5;
+}
+
+
+
