@@ -15,7 +15,7 @@ var buildReviewList = function(options) {
 	current.find('h5').html(options.title + '<span>' + options.date + '</span>');
 	current.find('p').text(options.review);
 	for(var i = 1; i <= options.rating; i++) {
-		current.find('h5').append('<img class=star src='+options.star+'/>');
+		current.find('h5').append('<img class=star src='+options.star+'>');
 	};
 	reviewList.append(current);
 }
