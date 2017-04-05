@@ -102,26 +102,34 @@
             <li>made in the philippines</li>
           </ul>
           <!-- Split button -->
-          <div>
-            <input class="select-button" type="button" value="Select Size">
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-            <input class="dropDown-button" type="button" name="">
-          </div>
-          <div class="right-split-button">
-            <input class="select-button" type="button" value="Select Color">
-            <i class="fa fa-caret-down" aria-hidden="true"></i>
-            <input class="dropDown-button" type="button" name="">
-          </div>
-
+            <div class="styled-select">
+              <select class="size">
+                <option>Select Size</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+              </select>
+            </div> 
+            <div class="styled-select select-right">
+              <select class="color">
+                <option>Select Color</option>
+                <option>Black</option>
+                <option>Gray</option>
+                <option>Green</option>
+              </select>
+            </div>    
           <div class="a-validation-box">
             <span class="quantity-span">Quantity</span>
-            <div>
-              <i class="fa fa-caret-down" aria-hidden="true"></i>
-              <input class="dropDown-button" type="button" name="">
-              <span class="quantity">1</span>
-              <i class="fa fa-caret-up" aria-hidden="true"></i>
-              <input id="dropUp" class="dropDown-button" type="button" name="">            
-            </div>
+
+            <div class="group-input">
+              <button id="dropDown" class="dropDown-button" data-type="qtyminus" data-field="quant">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </button>
+              <input class="q-input" type="text" name="quant" value="1" min="1" max="10">
+              <button id="dropUp" class="dropDown-button" data-type="qtyplus" data-field="quant">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+              </button>          
+            </div> 
             <button class="validation-button">Add To Cart</button>
           </div>
         </div>
@@ -152,32 +160,6 @@
         <h2>Reviews</h2>
         <a class="modal-link" href="#" data-toggle="modal" data-target="#myModal"> Write a review on this product</a>       
       </div>
-      <div class="reviews-wrapper">
-        <div class="reviewer">
-          <img src="image-assets/reviewer1.png">
-          <span class="reviewer-name">Shaun White</span>
-        </div>
-        <div class="review-text">
-          <h5>This Thing is a monster! <span>08/20/2013</span><img class="star" src="image-assets/star.png"> <img class="star" src="image-assets/star.png"> <img class="star" src="image-assets/star.png"> <img class="star" src="image-assets/star.png"></h5>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-          </p>
-        </div>        
-      </div>
-
-      <div class="reviews-wrapper">
-        <div class="reviewer">
-          <img src="image-assets/reviewer2.png">
-          <span class="reviewer-name">Jennie Loren</span>
-        </div>
-        <div class="review-text">
-          <h5>Luv it so much I bought 2! <span>01/12/2013</span><img class="star" src="image-assets/star.png"> <img class="star" src="image-assets/star.png"> <img class="star" src="image-assets/star.png"></h5>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-          </p>
-        </div>        
-      </div>
-
     </div>  
   </section>
 
